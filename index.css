@@ -1,0 +1,92 @@
+/* Bootstrap code edit */
+.nav-item a {
+    color: black !important;
+    transition: 0.3s !important; 
+}
+/* Ends Here */
+
+/* For UnderLine Effect */
+.nav-item a {
+    color: black !important;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+    transition: all 0.2s ease; /* Smoother transition for all properties */
+}
+
+.nav-item a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    background: black;
+    transition: width 0.3s ease; /* Ease out transition for underline */
+    right: 0;
+    bottom: 0;
+}
+
+.nav-item:hover a {
+    font-weight: bold ease;
+}
+
+.nav-item:hover a::after {
+    width: 100%;
+    left: 0;
+}
+/* Ends Here */
+
+/* BG Color */
+.blur-bg {
+    background: linear-gradient(
+        143.6deg,
+        rgba(192, 132, 252, 0) 20.79%,
+        rgba(255, 0, 0, 0.26) 40.92%,
+        rgba(204, 171, 238, 0) 70.35%
+    );
+    filter: blur(10px);
+    position: absolute;
+    inset: 0;
+    height: 580px;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.navbar-nav {
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+/* Ends Here */
+
+/* For Desktop and Mobile content */
+
+/* Desktop content */
+
+.desktop {
+    display: none;
+  }
+  
+  /* Mobile */
+  .mobile {
+    display: none;
+  }
+  
+  /* Show desktop on screens larger than 992px (Bootstrap's lg breakpoint) */
+  @media (min-width: 992px) {
+    .desktop {
+      display: block;
+    }
+  }
+  
+  /* Show mobile on screens smaller than 992px */
+  @media (max-width: 991px) {
+    .mobile {
+      display: block;
+    }
+  }
+
+/* Ends Here */
